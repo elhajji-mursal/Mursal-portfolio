@@ -1,0 +1,7 @@
+# robots.txt for Elhajji Mursal Portfolio
+User-agent: *
+Allow: /
+
+# Note: Once the production custom domain is finalized (e.g. https://elhajjimursal.com),
+# update the Sitemap URL below accordingly:
+# Sitemap: https://<PRODUCTION_DOMAIN>/sitemap.xml

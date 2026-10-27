@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Sitemap for Elhajji Mursal Portfolio.
+  NOTE: Replace "https://[PRODUCTION_DOMAIN]" with the verified live domain upon deployment.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://[PRODUCTION_DOMAIN]/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
