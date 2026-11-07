@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, MessageSquare, Copy, Check, ArrowUpRight, FileText } from 'lucide-react';
+import { Mail, MessageSquare, Copy, Check, ArrowUpRight } from 'lucide-react';
 import { Container } from '../common/Container';
 import { SectionHeading } from '../common/SectionHeading';
 import { Card } from '../common/Card';
@@ -17,16 +17,16 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 lg:py-28 bg-canvas-muted border-t border-slate-border">
+    <section id="contact" className="py-16 sm:py-20 lg:py-24 bg-canvas border-t border-slate-border">
       <Container>
         <SectionHeading
-          tag="Direct Communication"
-          title="Let's discuss your next project or technical opportunity."
-          description="Whether you have an immediate IT support opening, need an internal business application developed, or want to consult on technical infrastructure, I am ready to connect."
+          tag="Contact"
+          title="Get In Touch"
+          description="Have a project, technical opportunity, or business idea? Feel free to get in touch."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left Column: Direct Channels & CV Status */}
+          {/* Left Column: Direct Channels */}
           <div className="lg:col-span-5 space-y-6">
             {/* Direct Email Card */}
             <Card hoverable className="p-6 sm:p-7">
@@ -36,13 +36,13 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-base text-slate-primary">
-                    Email Communication
+                    Email
                   </h3>
-                  <span className="text-xs text-slate-muted">Formal proposals &amp; role specifications</span>
+                  <span className="text-xs text-slate-muted">Direct inbox</span>
                 </div>
               </div>
               <p className="text-xs sm:text-sm text-slate-secondary mb-4 leading-relaxed">
-                Direct inbox monitored regularly. Best for detailed briefs and official correspondence.
+                Send an email for project inquiries, role specifications, or collaboration details.
               </p>
               <div className="p-2.5 bg-canvas rounded-lg border border-slate-border text-xs font-mono text-slate-primary break-all mb-3">
                 {PROFILE.email}
@@ -56,7 +56,7 @@ export const Contact: React.FC = () => {
                   icon={<ArrowUpRight className="w-3.5 h-3.5" />}
                   iconPosition="right"
                 >
-                  Compose Email
+                  Send Email
                 </Button>
                 <Button
                   type="button"
@@ -78,13 +78,13 @@ export const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-base text-slate-primary">
-                    Direct WhatsApp
+                    WhatsApp
                   </h3>
-                  <span className="text-xs text-slate-muted">Quick inquiries &amp; prompt tech support</span>
+                  <span className="text-xs text-slate-muted">Direct messaging</span>
                 </div>
               </div>
               <p className="text-xs sm:text-sm text-slate-secondary mb-4 leading-relaxed">
-                Instant messaging channel for urgent troubleshooting, availability checks, or introductory dialogue.
+                Connect directly for quick discussions, inquiries, or technical support assistance.
               </p>
               <div className="p-2.5 bg-canvas rounded-lg border border-slate-border text-xs font-mono text-slate-primary mb-3">
                 {PROFILE.whatsappFormatted}
@@ -102,21 +102,6 @@ export const Contact: React.FC = () => {
                 Chat on WhatsApp
               </Button>
             </Card>
-
-            {/* CV Forthcoming Notice Box */}
-            <div className="p-5 bg-canvas border border-slate-border rounded-xl">
-              <div className="flex items-start gap-3">
-                <FileText className="w-5 h-5 text-slate-muted shrink-0 mt-0.5" />
-                <div>
-                  <h4 className="font-semibold text-sm text-slate-primary">
-                    Curriculum Vitae (CV) Status
-                  </h4>
-                  <p className="text-xs text-slate-secondary mt-1 leading-relaxed">
-                    The verified CV document is currently being compiled to include verified academic credentials, systems administration capabilities, and technical coursework. It will be available for direct download once reviewed.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right Column: Interactive Contact Form */}

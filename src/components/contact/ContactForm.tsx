@@ -137,7 +137,7 @@ export const ContactForm: React.FC = () => {
           Send a Detailed Inquiry
         </h3>
         <p className="text-xs sm:text-sm text-slate-secondary mt-1">
-          Fill out the form below. Once validated, your message will be dispatched directly to <span className="font-mono text-slate-primary font-medium">{PROFILE.email}</span>.
+          Complete the form below to prepare an inquiry addressed to <span className="font-mono text-slate-primary font-medium">{PROFILE.email}</span>.
         </p>
       </div>
 
@@ -213,7 +213,7 @@ export const ContactForm: React.FC = () => {
                 name="name"
                 value={values.name}
                 onChange={handleChange}
-                placeholder="e.g. Jane Doe"
+                placeholder="Alex Mwangi"
                 aria-invalid={Boolean(errors.name)}
                 aria-describedby={errors.name ? 'contact-name-error' : undefined}
                 className={`w-full px-3.5 py-2.5 rounded-lg border text-sm transition-colors bg-canvas focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
@@ -244,7 +244,7 @@ export const ContactForm: React.FC = () => {
                 name="email"
                 value={values.email}
                 onChange={handleChange}
-                placeholder="e.g. jane@company.com"
+                placeholder="alex@business.co.ke"
                 aria-invalid={Boolean(errors.email)}
                 aria-describedby={errors.email ? 'contact-email-error' : undefined}
                 className={`w-full px-3.5 py-2.5 rounded-lg border text-sm transition-colors bg-canvas focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent ${
@@ -311,7 +311,7 @@ export const ContactForm: React.FC = () => {
               rows={4}
               value={values.message}
               onChange={handleChange}
-              placeholder="Describe your project requirements, technical challenge, or role specifications..."
+              placeholder="Briefly explain what you need help with..."
               aria-invalid={Boolean(errors.message)}
               aria-describedby={errors.message ? 'contact-message-error' : undefined}
               className={`w-full px-3.5 py-2.5 rounded-lg border text-sm transition-colors bg-canvas focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent resize-y ${

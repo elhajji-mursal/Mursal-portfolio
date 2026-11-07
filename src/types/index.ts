@@ -1,39 +1,20 @@
-export type ProjectStatus = 'Planned' | 'In Progress' | 'Completed';
-
 export interface Project {
   id: string;
   title: string;
-  tagline: string;
-  problemSpace: string;
-  architecturePlan: string;
-  technologies: string[];
-  status: ProjectStatus;
-  keyFeatures: string[];
-  plannedOutputs?: string[];
-  liveDemoUrl?: string;
-  repoUrl?: string;
-}
-
-export interface SkillItem {
-  name: string;
-  context?: string;
+  description: string;
 }
 
 export interface SkillCategory {
   id: string;
   title: string;
-  subtitle: string;
-  iconName: 'Code' | 'Server' | 'Layers' | 'Shield' | 'Cpu' | 'Network';
-  skills: SkillItem[];
+  iconName: 'Code' | 'Server' | 'Cpu' | 'Network';
+  skills: string[];
 }
 
 export interface ServiceItem {
   id: string;
   title: string;
-  tagline: string;
-  targetAudience: string;
   description: string;
-  capabilities: string[];
   iconName: 'AppWindow' | 'Workflow' | 'Wrench' | 'Zap';
 }
 
@@ -48,7 +29,8 @@ export interface EducationItem {
 export interface ProfileData {
   displayName: string;
   title: string;
-  tagline: string;
+  headline: string;
+  introduction: string;
   email: string;
   whatsappPhone: string;
   whatsappFormatted: string;
@@ -57,11 +39,10 @@ export interface ProfileData {
   availability: {
     status: 'available' | 'busy';
     label: string;
-    description: string;
   };
-  summary: string[];
-  corePillars: {
+  about: {
+    heading: string;
     title: string;
     description: string;
-  }[];
+  };
 }
